@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Przykładowy formularz</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<section>
+<h1>Przykładowy formularz:</h1>
+  
+<fieldset> 
+<legend> Dane osobowe</legend> 
+
+<form action="mailto:adres@email.pl" enctype="text/plain" method="post" name="formularz"> 
+
+<label>Imię:</label> 
+<input type="text" name="imie1" required placeholder="Imię" pattern="[A-ZĄĘŻŹĆŁÓŚŃ][a-ząężźćłóśń]{2,15}" title="Imiona rozpoczynamy dużą literą. Długość od 3 do 15 liter."> 
+<br><br>
+
+<label>Drugie imię:</label>
+<input type="text" name="imie2" size="35" placeholder="Drugie imię (nieobowiązkowo)" pattern="[A-ZĄĘŻŹĆŁÓŚŃ][a-ząężźćłóśń]{2,15}" title="Imiona rozpoczynamy dużą literą. Długość od 3 do 15 liter."> 
+<br><br>
+
+<label>Nazwisko:</label> 
+<input type="text" name="nazwisko" required placeholder="Nazwisko" pattern="[A-ZĄĘŻŹĆŁÓŚŃ][a-ząężźćłóśń]{3,20}" title="Nazwiska rozpoczynamy dużą literą. Długość od 3 do 20 liter."> <br><br>
+
+<label>Płeć:</label>
+<input type="radio" name="plec" value="mezczyzna" checked> Mężczyzna
+<input type="radio" name="plec" value="kobieta"> Kobieta 
+<br><br>
+
+<label>Data urodzenia:</label>
+<input type="date" name="dataurodzenia"> 
+<br><br>
+
+<label>Waga:</label>
+<input type="number" name="waga" min="0" max="200" value="0">
+<br><br>
+
+<label>Kod pocztowy:</label>
+<input type="text" name="kod" pattern="^\d{2}-\d{3}$" placeholder="XX-XXX">
+<br><br>
+
+
+<label>Województwo:</label>
+<input type="text" name="wojewodztwo" list="wojewodztwa">
+    <datalist id="wojewodztwa">
+    <option value="dolnośląskie">
+    <option value="kujawsko-pomorskie">
+    <option value="lubelskie">
+    <option value="lubuskie">
+    <option value="łódzkie">
+    <option value="małopolskie">
+    <option value="mazowieckie">
+    <option value="opolskie">
+    <option value="podkarpackie">
+    <option value="podlaskie">
+    <option value="pomorskie">
+    <option value="śląskie">
+    <option value="świętokrzyskie">
+    <option value="warmińsko-mazurskie">
+    <option value="wielkopolskie">
+    <option value="Zachodniopomorskie">
+    </datalist>
+<br><br>
+		
+<label>Pesel:</label> 
+<input type="text" name="pesel" required placeholder="Pesel" pattern="[1-9][0-9]{10}" title="Pesel składa się z jedenastu cyfr."> 
+<br><br>
+
+<label>Telefon:</label> 
+<input type="tel" name="telefon" pattern="[1-9][0-9]{8}" placeholder="Telefon" title="Numer telefony powinien składać się z 9 cyfr.">
+<br><br>
+
+<label>Email:</label> 
+<input type="email" name="email" required placeholder="Podaj adres email" maxlength="35" size="35">
+<br><br>
+
+<label>Strona WWW:</label> 
+<input type="url" name="strona"  pattern="http://.+" placeholder="Adres WWW (nieobowiązkowy)" title="Adres WWW powinien się rozpoczynać od http://." maxlength="50" size="50">
+<br><br>
+	
+<label>Zainteresowania:</label> 		
+<input type="checkbox" name="zainteresowania" value="turystyka"> Turystyka
+<input type="checkbox" name="zainteresowania" value="sztuka"> Sztuka
+<input type="checkbox" name="zainteresowania" value="muzyka"> Muzyka 
+<input type="checkbox" name="zainteresowania" value="film"> Film
+<input type="checkbox" name="zainteresowania" value="sport"> Sport 
+<br><br>
+
+<label>Ulubiony owoc:</label>
+<select name="owoc" size="1">
+<option value="gruszka">Gruszka</option>
+<option value="sliwka">Śliwka</option>
+<option value="jablko">Jabłko</option>
+<option value="morela">Morela</option>
+</select>
+<br><br>
+
+<label>Ulubiony kolor:</label> 
+<input type="color" name="ulbionykolor">
+<br><br>
+
+<label>Twoje atuty:</label>
+<textarea name="opis" rows="3" maxlength="100" required cols="50"></textarea>
+<br><br>
+
+<label>Wybierz liczbę od 1 do 50:</label> 
+<input type="range" name="liczba" min="1" max="50">
+<br><br>
+
+<input type="submit"  value="Wyślij">
+<input type="reset" value="Reset">
+
+</form>
+</fieldset>
+</section>
+
+</body>
+</html>

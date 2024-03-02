@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang=pl>
+<html lang=jp>
     <head>
         <meta charset=utf-8>
         <title>Moja strona</title>
@@ -10,6 +10,74 @@
 </html>
 <body>
     <header>
-        <h1>Strona o </h1>
+        <h1>Strona o japońskim</h1>
     </header>
+    <img src="gitara.jpg" width="300" height="300">
+    <p><a href="https://ankiweb.net/about">Anki, easy way to learn a language</a></p>
+    <ul>
+        <li>Hiragana</li>
+        <li>Katakana</li>
+        <li>Kanji</li>
+        <ul>
+            <li>N5</li>
+            <li>N4</li>
+            <li>N3</li>
+            <li>N2</li>
+            <li>N1</li>
+        </ul>
+    </ul>
+    <table>
+        <tr>
+          <th>Kanji</th>
+          <th>Onyomi</th>
+          <th>Kunyomi</th>
+        </tr>
+        <tr>
+          <td>十</td>
+          <td>とお、 と</td>
+          <td>ジュウ、 ジッ、ジュッ</td>
+        </tr>
+        <tr>
+          <td>人</td>
+          <td>ひと、 -り、 -と</td>
+          <td>ジン、 ニン</td>
+        </tr>
+    </table>
+    <legend>Sign in to newsletter</legend> 
+    <form action="mailto:adres@email.pl" enctype="text/plain" method="post" name="formularz"> 
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" required placeholder="Insert email" maxlength="50" size="50"><br>
+        <label for="phone">Phone number:</label>
+        <input type="tel" name="phone" pattern="[1-9][0-9]{8}" placeholder="Phone"><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday"><br>
+        <label for="pNumber">Post number</label>
+        <input type="text" name="pNumber" pattern="^\d{2}-\d{3}$" placeholder="XX-XXX"><br>
+        <label for="Region">Region</label>
+        <input type="text" name="wojewodztwo" list="wojewodztwa">
+            <datalist id="wojewodztwa">
+            <option value="dolnośląskie">
+            <option value="kujawsko-pomorskie">
+            <option value="lubelskie">
+            <option value="lubuskie">
+            <option value="łódzkie">
+            <option value="małopolskie">
+            <option value="mazowieckie">
+            <option value="opolskie">
+            <option value="podkarpackie">
+            <option value="podlaskie">
+            <option value="pomorskie">
+            <option value="śląskie">
+            <option value="świętokrzyskie">
+            <option value="warmińsko-mazurskie">
+            <option value="wielkopolskie">
+            <option value="Zachodniopomorskie">
+            </datalist>
+        <label for="city">City:</label>
+        <input type="text" id="city"><br>
+    </form>
 </body>
