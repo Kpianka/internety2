@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+article, aside, details, figcaption, figure, footer, header,
+    hgroup, menu, nav, section {
+  display: block; /*sposób wyświetlania elementu*/
+}
+
+header, nav, article, footer {
+  margin: 2px 0px;         /*atrybuty marginesu, 2px - górny i dolny*/
+  border: 1px dotted black; /*atrybuty mieszane obramowania*/
+}
+
+footer {
+  clear: both; /*przyleganie do elementu, both-żaden bok nie przylega*/
+}
+
+nav {
+  float: left; /*ustawienie w poziomie*/
+  width: 25%;  /*szerokość*/
+}
+
+article {
+  float: right;  /*ustawienie w poziomie*/
+  width: 73%;    /*szerokość*/
+  margin: 2px 0; /*atrybuty marginesu*/
+}
+
+body {
+  margin: 0 auto;/*atrybuty marginesu*/
+	width: 90%;    /*szerokość*/
+}
+
+p {
+  margin: 2px; /*atrybuty marginesu*/
+}
