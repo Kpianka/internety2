@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang=ja>
+    <head>
+        <meta charset=utf-8>
+        <title>JP learning</title>
+        <link rel=stylesheet media=all href="css/style.css" />
+    </head>
+
+    <body>
+        <div id="navWrapper">
+            <div id="navButton">first</div>
+            <div id="navButton">second</div>
+            <div id="navButton">third</div>
+            <div id="navButton">forth</div>
+            <div id="navButton">fifth</div>
+        </div>
+        <section id="textBackground">
+            <header>
+                <h1>Site about japanese</h1>
+            </header>
+
+            <section>
+                <figure>
+                    <img src="japonia.jpg" width="300" height="300">
+                    <figcaption>By https://www.flickr.com/photos/reggiepen/ - https://www.flickr.com/photos/reggiepen/17025277650/, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=67128875</figcaption>
+                </figure>
+            </section>
+
+            <article>
+                <p>
+                    Japanese is at the same time very fun and very hard language to learn especially for people from eastern countries.
+                    Learning it tho is very worth it and satysfying.
+                </p>
+                <p>One good thing if you're from Poland is that pronauciation at least is simillar to ours but there is still need to learn about intonation</p>
+                <p>Below are couple of info about japanese language</p>
+            </article>
+
+            <nav>
+                <fieldset>
+                    <legend>Anki, easy way to learn a language</legend>
+                    <a href="https://ankiweb.net/about">Anki site</a>
+                </fieldset>
+            </nav>
+
+            <article>
+                <dl>
+                    <dt>Hiragana</dt>
+                    <dd>First syllabary that was created from man'yogany, mostly used for local words</dd>
+                    <dt>Katakana</dt>
+                    <dd>Second japanese syllabary, mostly used for words that are borrowed from foreign countries</dd>
+                </dl>
+            </article>
+
+            <nav>
+                <ul>
+                    <li><a href="#hiragana"> Hiragana </a></li>
+                    <li><a href="#katakana"> Katakana </a></li>
+                    <li>
+                        <a href="#kanji">Kanji</a>
+                        <ul>
+                            <li>N5</li>
+                            <li>N4</li>
+                            <li>N3</li>
+                            <li>N2</li>
+                            <li>N1</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <aside>
+                <pre id="hiragana">
+            Hiragana
+                a	i	u	e	o
+            ∅	あ	い	う	え	お
+            k-	か	き	く	け	こ
+            s-	さ  し	す	せ	ん
+            t-	た	ち	つ	て	と
+            n-	な	に	ぬ	ね	の
+            h-	は	ひ	ふ	へ	ほ
+            m-	ま	み	む	め	も
+            y-	や		ゆ		よ
+            r-	ら	り	る	れ	ろ
+            w-	わ				を
+            </pre>
+                <pre id="katakana">
+            Katakana               
+                a	i	u	e	o           
+            ∅	ア	イ	ウ	エ	オ
+            k-	カ	キ	ク	ケ	コ
+            s-	サ	シ	ス	セ	ソ
+            t-	タ	チ	ツ	テ	ト
+            n-	ナ	ニ	ヌ	ネ	ノ
+            h-	ハ	ヒ	フ	ヘ	ホ
+            m-	マ	ミ	ム	メ	モ
+            y-	ヤ		ユ		ヨ
+            r-	ラ	リ	ル	レ	ロ
+            w-	ワ	ヰ		ヱ	ヲ
+            </pre>
+            </aside>
+            <section>
+                <table id="kanji">
+                    <tr>
+                        <th>Kanji</th>
+                        <th>Onyomi</th>
+                        <th>Kunyomi</th>
+                    </tr>
+                    <tr>
+                        <td>十</td>
+                        <td>とお、 と</td>
+                        <td>ジュウ、 ジッ、ジュッ</td>
+                    </tr>
+                    <tr>
+                        <td>人</td>
+                        <td>ひと、 -り、 -と</td>
+                        <td>ジン、 ニン</td>
+                    </tr>
+                    <tr>
+                        <td>雨</td>
+                        <td colspan="2">あめ</td>
+                    </tr>
+                </table>
+            </section>
+
+            <footer>
+                <h4>Sign in to newsletter</h4>
+                <form action="mailto:adres@email.pl" enctype="text/plain" method="post" name="formularz">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Insert email" maxlength="50" size="50"><br>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[1-9][0-9]{8}" placeholder="Phone"><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br>
+                    <label for="pNumber">Post number: </label>
+                    <input type="text" id="pNumber" name="pNumber" pattern="^\d{2}-\d{3}$" placeholder="XX-XXX"><br>
+                    <label for="Region">Region: </label>
+                    <input type="text" id="Region" name="wojewodztwo" list="wojewodztwa">
+                    <datalist id="wojewodztwa">
+                        <option value="dolnośląskie">
+                        <option value="kujawsko-pomorskie">
+                        <option value="lubelskie">
+                        <option value="lubuskie">
+                        <option value="łódzkie">
+                        <option value="małopolskie">
+                        <option value="mazowieckie">
+                        <option value="opolskie">
+                        <option value="podkarpackie">
+                        <option value="podlaskie">
+                        <option value="pomorskie">
+                        <option value="śląskie">
+                        <option value="świętokrzyskie">
+                        <option value="warmińsko-mazurskie">
+                        <option value="wielkopolskie">
+                        <option value="Zachodniopomorskie">
+                    </datalist><br>
+                    <label for="city">City:</label>
+                    <input type="text" id="city"><br>
+                </form>
+            </footer>
+        </section>
+    </body>
+</html>
